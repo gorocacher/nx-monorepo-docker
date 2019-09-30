@@ -37,8 +37,8 @@ services:
       dockerfile: Dockerfile
     restart: always
     volumes:
-      - vol_shared:/home/app/mssql/shared
-      - vol_certificates:/home/app/mssql/certificates
+      - vol_shared:/app/volumes/shared
+      - vol_certificates:/app/volumes/certificates
     ports:
       - "4202:4202"
     networks:
